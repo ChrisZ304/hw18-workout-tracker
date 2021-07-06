@@ -10,7 +10,7 @@ const router = require("express").Router();
 //     }
 // });
 
-//get all databse workouts
+//get all database workouts
 router.get("/api/workouts", (req, res) => {
 
     db.Workout.find({}).then(dbWorkout => {
